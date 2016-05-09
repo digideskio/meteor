@@ -1,5 +1,10 @@
 ## v.NEXT
 
+* Meteor packages with binary npm dependencies are now automatically
+  rebuilt using `npm rebuild` whenever the version of Node or V8 changes,
+  making it much simpler to use Meteor with different versions of Node.
+  5dc51d39ecc9e8e342884f3b4f8a489f734b4352
+
 * You can now pick where the `.meteor/local` directory is created by setting the `METEOR_LOCAL_DIR` environment variable. This lets you run multiple instances of the same Meteor app.
   [PR #6760](https://github.com/meteor/meteor/pull/6760) [Issue #6532](https://github.com/meteor/meteor/issues/6532)
 
